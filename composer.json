@@ -1,0 +1,22 @@
+{
+  "name": "legionth/igdb-reactphp-collector",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Niels Theen",
+      "email": "niels.theen@googlemail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": { "Legionth\\React\\IGDBCollector\\": "src/" }
+  },
+  "autoload-dev": {
+    "psr-4": { "Tests\\Legionth\\React\\IGDBCollector\\": "tests/" }
+  },
+  "require": {
+    "php": ">=7.1",
+    "legionth/igdb-reactphp-client": "^0.1.0",
+    "react/mysql": "^0.4.0",
+    "react/promise": "^2.7.0"
+  }
+}

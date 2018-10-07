@@ -1,0 +1,6 @@
+CREATE TABLE game_genre_relation(
+  id INT(8) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  game_id INT(6) UNSIGNED NOT NULL,
+  genre_id INT(6) UNSIGNED NOT NULL,
+  FOREIGN KEY (game_id) REFERENCES games(id)
+);

@@ -1,0 +1,7 @@
+CREATE TABLE game_dlc_relation
+(
+  id INT(8) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  game_id INT(8) UNSIGNED NOT NULL,
+  dlc INT(8) UNSIGNED NOT NULL,
+  FOREIGN KEY (game_id) REFERENCES games(id)
+);

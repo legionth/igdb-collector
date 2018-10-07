@@ -1,0 +1,7 @@
+CREATE TABLE videos(
+  id INT(8) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  game_id INT(8) UNSIGNED NOT NULL,
+  name TEXT NOT NULL,
+  video_id TEXT,
+  FOREIGN KEY (game_id) REFERENCES games(id)
+)
